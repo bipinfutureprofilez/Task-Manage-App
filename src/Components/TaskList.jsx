@@ -1,6 +1,7 @@
 import React from 'react';
 
 function TaskList({ tasks, setTaskToEdit, deleteTask }) {
+    console.log('tasks: ', tasks);
     return (
         <div className="mt-6">
             {tasks.length === 0 ? (

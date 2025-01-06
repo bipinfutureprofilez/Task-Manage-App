@@ -35,7 +35,7 @@ function TaskForm({ addTask, editTask, taskToEdit, setTaskToEdit }) {
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                     required
-                    className="w-full bg-[#f7f7f7] px-3 py-2 border border-gray-300 rounded-md !outline-none"
+                    className="w-full bg-[#f7f7f7] text-sm px-3 py-2 border border-gray-300 rounded-md !outline-none"
                 />
             </div>
             <div>
@@ -45,7 +45,7 @@ function TaskForm({ addTask, editTask, taskToEdit, setTaskToEdit }) {
                     onChange={(e) => setDescription(e.target.value)}
                     required
                     minLength="10"
-                    className="w-full bg-[#f7f7f7] px-3 py-2 border border-gray-300 rounded-md !outline-none"
+                    className="w-full bg-[#f7f7f7] text-sm px-3 py-2 border border-gray-300 rounded-md !outline-none"
                 />
             </div>
             <div>
@@ -53,7 +53,7 @@ function TaskForm({ addTask, editTask, taskToEdit, setTaskToEdit }) {
                 <select
                     value={status}
                     onChange={(e) => setStatus(e.target.value)}
-                    className="w-full bg-[#f7f7f7] px-3 py-2 border border-gray-300 rounded-md !outline-none"
+                    className="w-full bg-[#f7f7f7] text-sm px-3 py-2 border border-gray-300 rounded-md !outline-none"
                 >
                     <option value="Pending">Pending</option>
                     <option value="In Progress">In Progress</option>
@@ -62,7 +62,7 @@ function TaskForm({ addTask, editTask, taskToEdit, setTaskToEdit }) {
             </div>
             <button
                 type="submit"
-                className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600"
+                className="px-4 py-2 bg-green-500 text-white text-sm rounded-md hover:bg-green-600"
             >
                 {taskToEdit ? 'Update Task' : 'Add Task'}
             </button>
