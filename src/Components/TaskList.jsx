@@ -1,7 +1,6 @@
 import React from 'react';
 
 function TaskList({ tasks, setTaskToEdit, deleteTask }) {
-    console.log('tasks: ', tasks);
     return (
         <div className="mt-6">
             {tasks.length === 0 ? (
@@ -33,7 +32,7 @@ function TaskList({ tasks, setTaskToEdit, deleteTask }) {
                                                 onClick={() => setTaskToEdit(task)}
                                             >
                                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8 2L10 4M6.66667 11.3333H12M1.33333 8.66667L0.666667 11.3333L3.33333 10.6667L11.0573 2.94267C11.3073 2.69263 11.4477 2.35355 11.4477 2C11.4477 1.64645 11.3073 1.30737 11.0573 1.05733L10.9427 0.942666C10.6926 0.692705 10.3536 0.552284 10 0.552284C9.64645 0.552284 9.30737 0.692705 9.05733 0.942666L1.33333 8.66667Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 2L10 4M6.66667 11.3333H12M1.33333 8.66667L0.666667 11.3333L3.33333 10.6667L11.0573 2.94267C11.3073 2.69263 11.4477 2.35355 11.4477 2C11.4477 1.64645 11.3073 1.30737 11.0573 1.05733L10.9427 0.942666C10.6926 0.692705 10.3536 0.552284 10 0.552284C9.64645 0.552284 9.30737 0.692705 9.05733 0.942666L1.33333 8.66667Z" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </button>
                                             <button
