@@ -7,6 +7,7 @@ import {
   TaskManager,
   Error
 } from './Pages/Index';
+import TaskContextProvider from './Context/TasksContext';
 
 function App() {
   const router = createBrowserRouter([
@@ -31,7 +32,9 @@ function App() {
   ])
   return (
     <>
-      <RouterProvider router={router} />
+      <TaskContextProvider>
+        <RouterProvider router={router} />
+      </TaskContextProvider>
     </>
   )
 }

@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { taskContext } from '../Context/TasksContext';
 
-function TaskList({ tasks, setTaskToEdit, deleteTask }) {
+function TaskList() {
+
+    const { tasks, setTaskToEdit, deleteTask } = useContext(taskContext);
+
     return (
         <div className="mt-6">
             {tasks.length === 0 ? (

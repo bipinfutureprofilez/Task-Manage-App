@@ -1,6 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { taskContext } from '../Context/TasksContext';
 
-function TaskForm({ addTask, editTask, taskToEdit, setTaskToEdit }) {
+function TaskForm() {
+
+    const { addTask, editTask, taskToEdit, setTaskToEdit } = useContext(taskContext);
+
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [status, setStatus] = useState('Pending');
